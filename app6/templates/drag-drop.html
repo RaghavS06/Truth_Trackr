@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veracity Test Determiner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="sidebar" id="sidebar" style="width: 200px;">
+        <a href="about" style="color: white;">About Truth Trackr</a>
+        <a href="report" style="color: white;">Report Misinformation Online</a>
+        <a href="drag-drop" style="color: white;">Put your Misinformation-Checking Skills to the Test!</a>
+        <a href="faq" style="color: white;">Frequently Asked Questions</a>
+    </div>
+    <a href="/" style="color: white;" class="home-button">Home</a>
+    <div class="container">
+        <div class="header">
+            <img src="/static/images/logo.png" alt="Veracity Determiner Logo" class="logo-image">
+            <span class="cool-title">Truth Trackr</span>
+        </div>
+        <h2 style="color: black" class="Drag and Drop">Drag and Drop</h2>
+        <div style="color: black; font-size: 130%;" id="stopwatch">0.000</div>
+        <!-- Drag and drop-->
+        <div id="container" style="text-align: center; width: 50%; margin: auto;">
+            <div class="category" id="true-category">
+                <h2>TRUE</h2>
+            </div>
+            <div class="category" id="false-category">
+                <h2>FALSE</h2>
+            </div>
+        </div>
+        <div style="color: black; font-size: 130%" id="claims-container">
+            <!-- Claims will be generated and added here -->
+        </div>
+        <div class="congratulations-screen" id="congratulations-screen">
+            <div class="congratulations-message">
+                Congratulations!
+            </div>
+            <div class="exit-button-container">
+                <button class="exit-button" onclick="closeCongratulationsScreen()">Exit</button>
+            </div>
+            <div class="final-time" id="final-time">Time: 0</div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script1.js') }}"></script>
+</body>
+</html>

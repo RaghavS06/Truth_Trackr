@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.category {
+    width: 200px; /* Increase width to accommodate more text boxes */
+    border: 2px solid #333;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 10px;
+    min-height: 200px; /* Set a minimum height for categories */
+    transition: height 0.3s; /* Add a smooth height transition effect */
+}
+
+.category h2 {
+    margin: 0;
+}
+
+#claims-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ... (previous CSS rules) */
+
+.claim {
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    border: 2px solid #333;
+    background-color: #f0f0f0;
+    cursor: grab;
+    user-drag: none; /* Disable native drag behavior */
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.claim.invalid {
+    background-color: #ff0000; /* Red background for invalid claims */
+}
+
+.congratulations-screen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    font-size: 24px;
+}
+
+.congratulations-message {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px; /* Add space between the message and the button */
+}
+
+/* Style the exit button */
+.exit-button-container {
+    text-align: center;
+}
+
+.exit-button {
+    background-color: #3EB489;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.exit-button:hover {
+    background-color: #3EB489;
+}

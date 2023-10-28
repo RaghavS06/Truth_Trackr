@@ -1,0 +1,408 @@
+body {
+    font-family: 'Marker Felt', fantasy;
+    background-color: #bbe5f8;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    position: relative;
+}
+
+.container {
+    text-align: center;
+}
+
+.header {
+    font-size: 48px;
+    color: #00ccff;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.cool-title {
+    font-size: 48px;
+    color: #079a13;
+    text-transform: uppercase;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    margin-top: 50px;
+    width: 500px;
+    padding: 10px;
+    font-size: 32px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: #ccc;
+    color: #000;
+    border: 2px solid #ccc;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 50px;
+}
+
+input[type="text"]::placeholder {
+    color: #332d2d;
+}
+
+#submit-button {
+    margin-top: 50px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007f3e;
+    color: #fff;
+    border: 2px solid #777;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    height: 50px;
+}
+
+#submit-button:hover {
+    background: linear-gradient(to bottom, #aaa, #ddd);
+    color: #000000;
+    cursor: pointer;
+}
+
+.output {
+    margin: 20px auto;
+    padding: 200px;
+    font-size: 100px;
+    width: 400px;
+    background-color: #fff;
+    color: #000;
+}
+
+#output-container.false {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.faq-dropdown {
+    width: 48%;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.faq-content {
+    font-size: 16px;
+    color: #fff;
+    padding: 10px 20px;
+    display: none;
+    border-top: 1px solid #ccc;
+}
+
+.faq-row {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.faq-title {
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #079a13;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    width: 90%;
+}
+
+.about-text-box {
+    font-size: 16px;
+    color: #000;
+    padding: 20px 20px;
+    background-color: #fff;
+}
+
+.social-logo {
+    width: 50px;
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    background-color: 079a13;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: fixed;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #079a13;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.social-network {
+    display: flex;
+    align-items: center;
+}
+
+.social-logo {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.claim {
+    width: 150px;
+    height: auto;
+    padding: 10px;
+    border: 2px solid #333;
+    background-color: #f0f0f0;
+    cursor: grab;
+    user-drag: none;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.home-button {
+    position: fixed;
+    top: 10px;
+    left: 230px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 999;
+}
+
+.home-button:hover {
+    background-color: #0056b3;
+}
+/* ... (your existing styles) ... */
+
+/* Add styles for the sidebar button to open the sidebar */
+.openbtn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 2;
+    color: white;
+}
+
+/* Adjust the sidebar width and initial position */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0px; /* Initially hidden */
+    width: 230px;
+    height: 100%;
+    background-color: #747474;
+    color: white;
+    transition: left 0.3s; /* Smooth transition effect */
+    overflow-x: hidden;
+    padding-top: 20px;
+    z-index: 1;
+}
+
+.sidebar-link {
+    padding: 10px 0;
+    text-align: center;
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sidebar-link:hover {
+    background-color: #0056b3;
+}
+
+.open-button {
+    position: fixed;
+    top: 500px;
+    left: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 999;
+}
+
+/* Adjust main content to make space for the sidebar */
+.main-content {
+    margin-left: 0; /* Initially no margin */
+    transition: margin-left 0.3s;
+    width: 100%;
+}
+
+/* Add styles for sidebar links */
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+/* Add hover effect for the sidebar */
+.sidebar:hover {
+    left: 0;
+}
+
+/* Ensure that the container covers the whole page width */
+.container {
+    width: 100%;
+}
+
+/* Expand main content when the sidebar is shown */
+.sidebar:hover + .main-content {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+}
+
+/* Make sure links in the sidebar change background color on hover */
+.sidebar a:hover {
+    background-color: #555;
+}
+
+.sidebar-minimized {
+    left: -250px; /* Sidebar is hidden */
+}
+
+.sidebar-expanded {
+    left: 0; /* Sidebar is fully visible */
+}
+
+
+h1 {
+    color: #333;
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.category {
+    width: 500px; /* Increase width to accommodate more text boxes */
+    border: 2px solid #333;
+    background-color: #5298d1;
+    padding: 10px;
+    margin: 10px;
+    min-height: 200px; /* Set a minimum height for categories */
+    transition: height 0.3s; /* Add a smooth height transition effect */
+}
+
+.category h2 {
+    margin: 0;
+}
+
+#claims-container {
+    display:flex;
+    flex-wrap: wrap;
+    color: #eff3e7;
+    justify-content:flex-end;
+}
+
+/* ... (previous CSS rules) */
+
+.claim {
+    margin-left:10%;
+    margin-right:10%;
+    padding: 5px;
+    border: 2px solid #333;
+    border-style: double;
+    background-color: #0ca89b50;
+    font-size:75%;
+    cursor: grab;
+    user-drag: none; /* Disable native drag behavior */
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.claim.invalid {
+    background-color: #ff0000; /* Red background for invalid claims */
+}
+
+.congratulations-screen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    font-size: 24px;
+}
+
+.congratulations-message {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px; /* Add space between the message and the button */
+}
+
+/* Style the exit button */
+.exit-button-container {
+    text-align: center;
+}
+
+.exit-button {
+    background-color: #3EB489;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.exit-button:hover {
+    background-color: #3EB489;
+}
+
+.logo-image {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px; /* Add some margin to separate the image from the text */
+}
+

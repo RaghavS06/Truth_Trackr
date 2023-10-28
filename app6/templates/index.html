@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth Trackr</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="sidebar" id="sidebar" style="width: 200px;">
+        <a href="about" style="color: white;">About Truth Trackr</a>
+        <a href="report" style="color: white;">Report Misinformation Online</a>
+        <a href="drag-drop" style="color: white;">Put your Misinformation-Checking Skills to the Test!</a>
+        <a href="faq" style="color: white;">Frequently Asked Questions</a>
+    </div>
+    <a href="/" class="home-button">Home</a> <!-- Home button outside of the sidebar -->
+    <div class="header">
+        <img src="/static/images/logo.png" alt="Truth Trackr Logo" class="logo-image">
+        <span class="cool-title">Truth Trackr</span>
+    </div>
+    <div class="container">
+        <div class="main-content" id="mainContent">            
+            <div class="container">
+                <p>                                                        </p>
+                <b style="color: black; font-size: 150%" >Welcome to Truth Trackr search!</b>
+                <p style="color: black; font-size: 150%" font-size: 24>This is an AI-based truth checker application!</p>
+                <p style="color: black; font-size: 150%">Please enter the URL that you would like to verify in the Text Space below:</p>         
+                <div class="input-container">
+                    <input type="text" id="textInput" placeholder="Enter your text here">
+                    <button id="submit-button" onclick="storeInput()">Submit</button>
+                </div>
+                <div style="font-size:300%; color: black" id="response" class="result-container"></div>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

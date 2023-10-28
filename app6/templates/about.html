@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth Trackr</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="sidebar" id="sidebar" style="width: 200px;">
+        <a href="about" style="color: white;">About Truth Trackr</a>
+        <a href="report" style="color: white;">Report Misinformation Online</a>
+        <a href="drag-drop" style="color: white;">Put your Misinformation-Checking Skills to the Test!</a>
+        <a href="faq" style="color: white;">Frequently Asked Questions</a>
+    </div>
+    <a href="/" style="color: white;" class="home-button">Home</a>
+    <div class="container">
+        <div class="header">
+            <img src="/static/images/logo.png" alt="Truth Trackr Logo" class="logo-image">
+            <span class="cool-title">Truth Trackr</span>
+        </div>
+
+        <!-- About Truth Trackr box with dummy text -->
+        <div class="faq-dropdown" id="about-box" onclick="toggleBox('about-box')" style="text-align:center; width:50%;margin:auto;">
+            <h2 class="faq-title">About Truth Trackr</h2>
+            <div style="color: black" class="faq-content" style="text-align:center; width:fit-content;margin:300;">
+                <p>
+                    Truth Trackr is a revolutionary tool designed to help users assess the accuracy and reliability of information they encounter online. Our mission is to combat the spread of misinformation and disinformation by empowering individuals to make informed decisions about the information they consume.
+                </p>
+                <p>
+                    Our platform utilizes state-of-the-art AI algorithms to analyze content and provide users with an assessment of its credibility. We believe in the importance of critical thinking and informed digital citizenship.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

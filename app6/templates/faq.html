@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="sidebar" id="sidebar"style="width: 200px;">
+        <a href="about" style="color: white;">About Truth Trackr</a>
+        <a href="report" style="color: white;">Report Misinformation Online</a>
+        <a href="drag-drop" style="color: white;">Put your Misinformation-Checking Skills to the Test!</a>
+        <a href="faq" style="color: white;">Frequently Asked Questions</a>
+    </div>
+    <a href="/" class="home-button">Home</a> <!-- Home button outside of the sidebar -->
+    <div class="header">
+        <img src="/static/images/logo.png" alt="Veracity Determiner Logo" class="logo-image">
+        <span class="cool-title">Truth Trackr</span>
+    </div>
+            <h2 style="color: #079a13">Frequently Asked Questions</h2>
+    
+            <div class="faq-container">
+            <div class="faq-dropdown" onclick="toggleFAQ(1)">
+                <div class="faq-title">1: How does your system determine if a news article is true or false?</div>
+                <div style="color: black" class="faq-content" id="faq-content-1">
+                    Our system utilizes a sophisticated machine learning model that has been trained on a vast dataset of reliable and unreliable news sources. It examines various factors, including the credibility of the source, factual content, and linguistic patterns to make its determination.
+                </div>
+            </div>
+            <div class="faq-dropdown" onclick="toggleFAQ(2)">
+                <div class="faq-title">2: What sources and data does your model rely on for its evaluations?</div>
+                <div style="color: black" class="faq-content" id="faq-content-2">
+                    Our model draws on a dataset of news sources, both reputable and unreliable. It uses a wide range of features, including known fact-checking databases and historical data, to make informed decisions.
+                </div>
+            </div>
+            <div class="faq-dropdown" onclick="toggleFAQ(3)">
+                <div class="faq-title">3: Can your system analyze news articles from any language or region?</div>
+                <div style="color: black" class="faq-content" id="faq-content-3">
+                    Currently, our system primarily focuses on news articles in English, but we are actively working on expanding its language and regional coverage. We're committed to making our service more accessible globally.
+                </div>
+            </div>
+            <div class="faq-dropdown" onclick="toggleFAQ(4)">
+                <div class="faq-title">4: How long does it take for your system to evaluate a news article?</div>
+                <div style="color: black" class="faq-content" id="faq-content-4">
+                    The evaluation time can vary depending on the complexity of the article and server load. Typically, it takes just a few seconds to analyze an article, but during peak times, it might take a bit longer.
+                </div>
+            </div>
+            <div class="faq-dropdown" onclick="toggleFAQ(5)">
+                <div class="faq-title">5: Can your system be used for academic or research purposes?</div>
+                <div style="color: black" class="faq-content" id="faq-content-5">
+                    Yes, our service can be valuable for academic and research projects. Feel free to contact us for more information about academic or research licensing.
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
